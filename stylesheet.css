@@ -1,73 +1,66 @@
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
-    margin: 0;
+  font-family: "Avenir Next";
 }
 
 li {
   list-style: none;
 }
 
-.top-img {
-  background-size: cover;
-  background-image: url(https://raw.githubusercontent.com/RYOTA-HIGASHI/RYOHA-HIGASHI.github.io/master/IMG_0323.png);
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-.top {
-  position: absolute;
-  top: 500px;
-  left: 300px;
-  bottom: 0px;
-  right: 0px;
-  margin:0 auto;
-
-}
-.top h1 {
-  font-size: 90px;
-  color: white;
-  margin: 0;
-  letter-spacing: 8px;
-  background-color: ;
-}
-.top h2 {
-  background-color: ;
-  font-size: 40px;
-  margin: 0;
-  color: white;
-  margin-left: 250px;
-}
-.side-menu {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 100%;
-  width: 170px;
-  text-align: center;
-  position: fixed;
-  top: 0;
-}
-.menu-logo h1 {
-  font-size: 20px;
-  margin: 40px 0px;
-}
-.menu-logo span {
-  color: rgba(251, 90, 197, 0.63);
-  font-size: 35px;
-}
-.menu-list a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding-bottom: 30px;
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
 }
 
-.profile {
-  height: 400px;
-  width: 100%;
-  background-color: rgba(34, 11, 34, 0.08);
-
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
 }
+
+.header-list {
+  float: left;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
+
+.main {
+  background-color: #bdf7f1;
+  height: 600px;
+}
+
+.footer {
+  /* background-colorを#2f5167に変更してください */
+  background-color: #2f5167;
+  
+  /* colorを#fffにしてください */
+  color:#fff;
+  
+  
+  /* heightを120pxに変更してください */
+  height: 120px;
+  /* 上下左右のpaddingを40pxにしてください */
+  padding: 40px;
+  
+}
+
+/* footer-logoのfont-sizeとfloatを指定してください */
+.footer-logo {
+  font-size: 32px;
+  float:left;
+}
+
+/* footer-listのfloatを指定してください */
+.footer-list {
+  float:right;
+  
+}
+
+/* footer-listの中のli要素のpadding-bottomを指定してください */
+.footer-list li {
+  padding-bottom: 20px;
+} 
+
