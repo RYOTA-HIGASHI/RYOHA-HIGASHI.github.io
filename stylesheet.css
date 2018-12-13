@@ -181,7 +181,7 @@ button {
 
 /* スマホ向けレイアウト*/
 @media (max-width: 670px) {
- h1 {
+ .top h1 {
      color: red;
     }
 }
