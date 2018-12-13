@@ -182,7 +182,10 @@ button {
 /* スマホ向けレイアウト*/
 @media (max-width: 670px) {
  .top h1 {
-     color: red;
+     color: blue;
+    }
+ .top-img {
+     width: 100%;
     }
 }
 
