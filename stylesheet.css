@@ -179,3 +179,10 @@ button {
   border-radius: 5px;
 }
 
+/* スマホ向けレイアウト*/
+@media(max-width:670px) {
+ h1 {
+     color: red;
+    }
+}
+
