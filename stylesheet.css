@@ -15,9 +15,6 @@ text-decoration: none;
   box-sizing: border-box;
 }
 
-.test {
-  width: 100%;
-}
 .side-menu {
   background-color: rgba(255, 255, 255, 0.3);
   height: 100%;
@@ -41,12 +38,7 @@ text-decoration: none;
   margin: 40px;
 }
 
-.menu-list a:hover {
-  background-color: rgba(251, 90, 197, 0.63);
-  opacity: 0.3;
-  border-radius: 4px;
-  transition: all 1s;
-}
+
 
 
 .top-img {
@@ -185,10 +177,18 @@ button {
 /* スマホ向けレイアウト*/
 @media (max-width: 670px) {
 .top h1 {
-     color: blue;
+     padding-left: 0px;
+     padding-top: 600px;
+     font-size: 40px;
+
     }
+.top h2 {
+     font-size: 20px;
+     margin: 0px;
+    
+}    
 .top-img {
-     width: 800px;
+     width: 375px;
     }
 .Heading h3 {
   margin: 0 0 30px 0px;
@@ -251,6 +251,44 @@ label {
 .button {
   padding-left: 60px;
 }
+
+
+.side-menu {
+  width: 100%;
+  height: 35px;
 }
+.menu-logo {
+  float: left;
+}
+.menu-logo h1 {
+  font-size: 10px;
+  padding-left: 3px;
+  margin: 0px 4px;;
+
+}
+.menu-logo span {
+  font-size: 20px;
+}
+.menu-list {
+  position: absolute;
+  padding-left: 90px;
+}
+
+.menu-list a{
+  height: 15px;
+  float: left;
+  font-size: 1px;
+  margin: 12px 6px 0px 1px;
+  background-color: re;
+ 
+
+}
+.menu-list a:hover {
+  background-color: rgba(251, 90, 197, 0.63);
+  opacity: 0.3;
+  border-radius: 4px;
+  transition: all 1s;
+}
+
 
 
