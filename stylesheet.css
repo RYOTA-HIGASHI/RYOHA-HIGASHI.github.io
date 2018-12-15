@@ -201,8 +201,10 @@ button {
   margin:0 0 10px 0px;
   font-size: 18px;
 }    
-
 .Heading {
+    height: 100%;
+    
+.Heading profile{
   height: 1300px;
 }
 .photo-list {
