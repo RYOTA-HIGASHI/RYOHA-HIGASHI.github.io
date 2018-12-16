@@ -157,9 +157,25 @@
           </div>
       </form>
        
+
   
 
     </div>
+       <div id="map"></div>
+       <script>
+    function initMap() {
+        var latlng = new google.maps.LatLng( 34.808502, 135.639683 );//中心の緯度, 経度
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,//ズームの調整
+          center: latlng//上で設定した中心
+        });
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map: map
+        });
+      }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=[取得したAPIキー]&callback=initMap"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script>
     <script src="tsumugi.js"></script>
