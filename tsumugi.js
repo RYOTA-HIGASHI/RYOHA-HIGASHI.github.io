@@ -19,5 +19,11 @@ function initMap() {
         var marker = new google.maps.Marker({
           position: latlng,
           map: map
+        icon: new google.maps.MarkerImage(
+      'https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/IMG_0637%203.jpg',//マーカー画像URL
+      new google.maps.Size(60, 80),//マーカー画像のサイズ
+      new google.maps.Point(0, 0),//マーカー画像表示の起点（変更しない）
+      new google.maps.Point(30, 80)//マーカー位置の調整
+    ),  
         });
       }      
