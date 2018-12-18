@@ -28,4 +28,4 @@ $(function(){
                 new google.maps.Point(30, 80)//マーカー位置の調整
             ),  
         });
-		
+ }
