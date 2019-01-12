@@ -15,6 +15,9 @@ $(function(){
 $('.menu-list a').click(function() {
   $(this).css('transform','rotate3d(10,10,10,360deg)');
 });
+$('.menu-logo h1,span').click(function() {
+  $(this).css('transform','none');
+});
 
 
 
