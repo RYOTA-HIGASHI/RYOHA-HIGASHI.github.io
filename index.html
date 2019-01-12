@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="lity.css">
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="lity.js"></script> 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDffBkEDNrkp-Ca653t3cfJnq9wvjy_c&callback=initMap"></script>
-    <script src="tsumugi.js"></script>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+
 
   </head>
   <body>
@@ -21,8 +20,8 @@
       </div>
       <div class="menu-list">
         <a href="#top">TOP</a>
-        <a href="#abc">PROFILE</a>
-        <a href="#galarry">GALARRY</a>
+        <a href="#profile">PROFILE</a>
+        <a href="#gallery">GALLERY</a>
         <a href="#movie">MOVIE</a>
         <a href="#access">ACCESS</a>
         <a href="#contact">CONTACT</a>
@@ -39,7 +38,7 @@
     </div>
 
     <div class="Heading profile">
-      <h3 id="abc"><span class="underline">PROFILE</span></h3>
+      <h3 id="profile"><span class="underline">PROFILE</span></h3>
       <ul>
         <li>2018年  ８月５日東家の長女として生まれる。</li>
         <li>2021年  大宮幼稚園に通い始める。</li>
@@ -60,57 +59,57 @@
       </ul>
     </div>
 
-    <div class="Heading galarry">
-      <h3 id="galarry"><span class="underline">GALARRY</span></h3>
-        <div class="photo-list">
+    <div class="Heading gallery">
+      <h3 id="gallery"><span class="underline">GALLERY</span></h3>
+        <div id="photo-list" randomdisplay="15">
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/1.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t1.JPG" alt="" >
+          <img id="photo-1" src="file:///Users/RYOTA/Desktop/tsumugi/thumbnail/t1.jpg" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/2.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t2.JPG" alt="" >
+          <img id="photo-2" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t2.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/3.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t3.JPG" alt="" >
+          <img id="photo-3" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t3.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/4.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t4.JPG" alt="" >
+          <img id="photo-4" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t4.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/5.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t5.JPG" alt="" >
+          <img id="photo-5" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t5.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/6.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t6.JPG" alt="" >
+          <img id="photo-6" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t6.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/7.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t7.JPG" alt="" >
+          <img id="photo-7" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t7.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/8.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t8.JPG" alt="" >
+          <img id="photo-8" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t8.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/9.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t9.JPG" alt="" >
+          <img id="photo-9" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t9.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/10.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t10.JPG" alt="" >
+          <img id="photo-10" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t10.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/11.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t11.JPG" alt="" >
+          <img id="photo-11" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t11.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/12.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t12.JPG" alt="" >
+          <img id="photo-12" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t12.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/13.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t13.JPG" alt="" >
+          <img id="photo-13" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t13.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/14.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t14.JPG" alt="" >
+          <img id="photo-14" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t14.JPG" alt="" >
           </a>
           <a href="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/15.JPG" data-lity="data-lity">
-          <img class="photo" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t15.JPG" alt="" >
+          <img id="photo-15" src="https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/t15.JPG" alt="" >
           </a>
-          
 
-          
+
+
        </div>
      </div>
 
@@ -129,7 +128,7 @@
             <p>京王井の頭線 永福町駅北口より徒歩８分</p>
             <div id="map"></div>
         </div>
-
+     </div>
 
      <div class="Heading contact">
        <h3 id="contact"><span class="underline">CONTACT</span></h3>
@@ -153,13 +152,19 @@
 
     </div>
 
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="lity.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDffBkEDNrkp-Ca653t3cfJnq9wvjy_c&callback=initMap"></script>
+    <script src="tsumugi.js"></script>
+    <script src="jquery.randomdisplay.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.3.js"></script>
 
 
 
 
 
-    
-    
+
 　　
   </body>
 </html>
