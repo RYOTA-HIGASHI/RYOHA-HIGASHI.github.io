@@ -17,20 +17,32 @@ text-decoration: none;
 
 .side-menu {
   background-color: rgba(255, 255, 255, 0.3);
-  height: 100%;
+  height: 150%;
   width: 170px;
   text-align: center;
   position: fixed;
   top: 0px;
+  z-index: 10;
+
+
 }
 
+.memu-logo{
+  display: none;
+}
 .menu-logo h1 {
   font-size: 20px;
   margin: 40px 0px;
+  transform: rotate(-15deg);
+  display: none;
+
 }
 .menu-logo span {
   color: rgba(251, 90, 197, 0.63);
   font-size: 35px;
+}
+.menu-list {
+  display: none;
 }
 .menu-list a {
   color: rgba(0, 0, 0, 0.8);
@@ -43,6 +55,7 @@ text-decoration: none;
   opacity: 0.3;
   border-radius: 4px;
   transition: all 1s;
+  
 }
 
 
@@ -51,7 +64,12 @@ text-decoration: none;
   background-image: url("https://raw.githubusercontent.com/RYOTA-HIGASHI/ryota-higashi.github.io/master/IMG_0323.png");
   height: 100%;
   width: 100%;
+  display: none;
 }
+.top {
+display:none;
+}
+
 
 .top h1 {
   text-align: center;
@@ -60,8 +78,6 @@ text-decoration: none;
   color: white;
   letter-spacing: 8px;
   margin: 0;
-  padding-top: 500px;
-
 }
 .top h2 {
   text-align: center;
@@ -95,15 +111,7 @@ text-decoration: none;
   font-size: 18px;
 }
 
-.photo {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
 
-.photo-list {
-  margin-left: 220px;
-}
 
 .movie iframe {
   display: block;
@@ -117,12 +125,12 @@ text-decoration: none;
 .address h4 {
   margin-top: 0px;
   margin: 5px;
-  color: #424242;
-  padding-left: 170px;
+  color: #585858;
+  padding-left:;
 }
 
 .address p {
-  padding-left: 170px;
+  padding-left:;
   color: #585858;
   margin: 5px;
 }
@@ -188,4 +196,35 @@ button {
 }
 .contact {
   height: 700px;
+}
+
+.profile li {
+  -webkit-transition: all 1s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+.profile li.move {
+  -webkit-transform: translate(-70px, 0);
+  opacity: 0;
+}
+
+.gallery img {
+  -webkit-transition: all 1s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+.gallery img.move {
+  -webkit-transform: translate(-70px, 0);
+  opacity: 0;
+}
+
+.movie iframe ,.access div{
+  text-align: center;
+  -webkit-transition: all 1s;
+  -webkit-transform: scale(1.0);
+  opacity: 1;
+}
+.movie iframe.move ,.access div .move{
+  -webkit-transform: translate(0, 0)  scale(0.5);
+  opacity: 0;
 }
